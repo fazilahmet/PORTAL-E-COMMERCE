@@ -1,0 +1,77 @@
+﻿
+.loginOrta {
+    margin-top: 13%;
+    align-items: center;
+    max-width: 450px;
+}
+
+.input-container {
+    display: flex;
+}
+
+.fa-user, .fa-lock,.fa-envelope {
+    padding: 9px 12px 12px 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #557B83;
+}
+
+.temaRengi {
+    color: #557B83;
+}
+
+.kayitLink {
+    color: #557B83;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.fa-check-circle {
+    color: #557B83;
+}
+
+.kayitDiv {
+    margin-top: 15px;
+}
+
+
+.kayitDiv {
+    animation: blinker 3s linear infinite;
+}
+
+
+@keyframes blinker {
+    50% {
+        opacity: 0.6;
+        color: red !important;
+    }
+}
+
+body {
+    background-image:url("/images/login.jpg");
+    background-size:cover;
+   
+}
+
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btnGiris:hover {
+    color: whitesmoke;
+}
+
+.btnGiris {
+    color: white;
+    background-color: #557B83;
+}
+
+.loginBaslik {
+    color: black;
+    font-weight: 700;
+}

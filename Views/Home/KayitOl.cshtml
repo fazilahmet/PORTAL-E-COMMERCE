@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <div class="container loginOrta ">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="loginBaslik">E-Commerce Portal</h2>
+            </div>
+        </div>
+        <div class="card p-3">
+            <form id="basvur">
+                <div class="row" style="max-width: 400px;">
+                    <div class="col-md-12 mb-2">
+                        <label>Name</label><br />
+                        <div class="input-container">
+                            <i class="fa fa-user"></i>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-2">
+                        <label>Surname</label><br />
+                        <div class="input-container">
+                            <i class="fa fa-user"></i>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-2">
+                        <label>Mail</label><br />
+                        <div class="input-container">
+                            <i class="fa fa-envelope"></i>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-2">
+                        <label>Username</label><br />
+                        <div class="input-container">
+                            <i class="fa fa-user"></i>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label>Password</label><br />
+                        <div class="input-container">
+                            <i class="fa fa-lock"></i>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <button class="btn btn-block btnGiris" type="submit" href="/KayitOl">Sign Up</button>
+                    </div>
+
+                      <div class="col-md-12 mt-3">
+                        <a class="temaRengi" href="/"><i class="fa fa-forward"></i>LOGIN IN</a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
