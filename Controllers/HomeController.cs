@@ -1,4 +1,4 @@
-﻿using E_Ticaret.Models;
+﻿using E_Ticaret.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;

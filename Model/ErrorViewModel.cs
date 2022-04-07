@@ -1,6 +1,6 @@
 using System;
 
-namespace E_Ticaret.Models
+namespace E_Ticaret.Model
 {
     public class ErrorViewModel
     {

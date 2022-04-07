@@ -1,4 +1,5 @@
-﻿@{
+﻿@model E_Ticaret.Model.Kullanici
+@{
     ViewData["Title"] = "Home Page";
     Layout = null;
 }
@@ -13,6 +14,11 @@
 
     <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+   <style>
+       .form-control {
+           width: 100% !important;
+       }
+   </style>
 </head>
 <body>
 
@@ -29,42 +35,42 @@
                         <label>Name</label><br />
                         <div class="input-container">
                             <i class="fa fa-user"></i>
-                            <input class="form-control" type="text" />
+                            @Html.TextBoxFor(m => m.Ad, new { @clas = "form-control" })
                         </div>
                     </div>
                     <div class="col-md-12 mb-2">
                         <label>Surname</label><br />
                         <div class="input-container">
                             <i class="fa fa-user"></i>
-                            <input class="form-control" type="text" />
+                            @Html.TextBoxFor(m => m.Soyad, new { @clas = "form-control"})
                         </div>
                     </div>
                     <div class="col-md-12 mb-2">
                         <label>Mail</label><br />
                         <div class="input-container">
                             <i class="fa fa-envelope"></i>
-                            <input class="form-control" type="text" />
+                            @Html.TextBoxFor(m => m.Mail, new { @clas = "form-control" })
                         </div>
                     </div>
                     <div class="col-md-12 mb-2">
                         <label>Username</label><br />
                         <div class="input-container">
                             <i class="fa fa-user"></i>
-                            <input class="form-control" type="text" />
+                            @Html.TextBoxFor(m => m.KullaniciAdi, new { @clas = "form-control" })
                         </div>
                     </div>
                     <div class="col-md-12">
                         <label>Password</label><br />
                         <div class="input-container">
                             <i class="fa fa-lock"></i>
-                            <input class="form-control" type="text" />
+                            @Html.TextBoxFor(m => m.Sifre, new { @clas = "form-control",@type="password" })
                         </div>
                     </div>
                     <div class="col-md-12 mt-3">
                         <button class="btn btn-block btnGiris" type="submit" href="/KayitOl">Sign Up</button>
                     </div>
 
-                      <div class="col-md-12 mt-3">
+                    <div class="col-md-12 mt-3">
                         <a class="temaRengi" href="/"><i class="fa fa-forward"></i>LOGIN IN</a>
                     </div>
 
